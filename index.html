@@ -506,13 +506,12 @@ button { font-family: inherit; cursor: pointer; border: none; }
           <div><h4>Clients From</h4><p>Australia · USA · India · Saudi Arabia</p></div>
         </div>
       </div>
-      <form class="contact-form fade-in" id="contactForm" action="https://formsubmit.co/developwithhabiba@gmail.com" method="POST">
-        <!-- FormSubmit config -->
-        <input type="hidden" name="_subject" value="New Portfolio Contact Message!">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://habiba-ctrl1.github.io/habiba-portfolio/#contact">
-        <input type="hidden" name="_template" value="box">
-        <input type="text" name="_honey" style="display:none">
+      <form class="contact-form fade-in" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+        <!-- Web3Forms config -->
+        <input type="hidden" name="access_key" value="86973717-47f1-410c-9ab5-7e771082893c">
+        <input type="hidden" name="subject" value="New Portfolio Contact Message!">
+        <input type="hidden" name="redirect" value="https://habiba-ctrl1.github.io/habiba-portfolio/#contact">
+        <input type="checkbox" name="botcheck" style="display: none;">
         <div class="form-row">
           <input type="text" name="name" placeholder="Your Name" required>
           <input type="email" name="email" placeholder="Your Email" required>
